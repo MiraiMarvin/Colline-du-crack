@@ -1,0 +1,240 @@
+$font-stack: Roboto;
+$primary-color: rgb(84, 125, 89);
+$secondary-color: rgb(254, 254, 254);
+
+body{
+    background-color: rgb(232, 218, 204);
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    position: sticky;
+    top: 0px;
+
+    .navigation{
+        .PC-nav{
+            color: rgb(33, 33, 33);
+            font-family:  $font-stack;
+            font-weight: 500;
+            font-size: 30px;
+            height: 7vh;
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+        }
+    }
+
+}
+
+
+.opening{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 70vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .art1{
+        background-image: url(../image/PCUN.jpg);
+        background-position: center;
+    }
+    .art2{
+        background-image: url(../image/PCCINQ.jpg);
+        background-position: center;
+    }
+    .art3{
+        background-image: url(../image/PCQUATRE.jpg);
+        background-position: center;
+    }
+    #article{
+        background-color: #333;
+        width: 33%;
+        height: 95%;
+        margin: 4%;
+        display: flex;
+        flex-direction: column-reverse;
+        
+        .indic{
+            background-color: $primary-color;
+            font-family:  $font-stack;
+            height: 30%;
+            text-align: center;
+            border-top: solid 2px grey;
+            display: flex;
+            align-items: center;
+            p{
+                font-family:  $font-stack;
+                padding: 10px;
+            }
+        }
+    }
+
+}
+.content{
+    padding-top: 120px;
+    font-size: 20px;
+    width: 100vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33vw 33vw 33vw;
+    div:nth-of-type(1){
+        background-color: $primary-color;
+        grid-column: 1/2  ;
+        grid-row: 1/2;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .textinfo{
+            font-family: $font-stack;
+            font-weight: 400;    
+            height: 50%;
+            width: 65%;
+        }
+    }
+    div:nth-of-type(2){
+        background-image: url(../image/PCUN.jpg);
+        grid-column: 2/3  ;
+        grid-row: 1/2;
+    }
+    div:nth-of-type(3){
+        background-image: url(../image/PCSEPT.jpg);
+        background-size: cover;
+        grid-column: 1/2 ;
+        grid-row: 2/3;
+    }
+    div:nth-of-type(4){
+        background-color: $primary-color;
+        grid-column: 2/3  ;
+        grid-row: 2/3;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .textinfo{
+            font-family: $font-stack;
+            font-weight: 400;
+            height: 50%;
+            width: 65%;
+        }
+        
+    }
+    div:nth-of-type(5){
+        background-color: $primary-color;
+        grid-column: 1/2  ;
+        grid-row: 3/4;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .textinfo{
+            font-family: $font-stack;
+            font-weight: 400;
+            height: 50%;
+            width: 65%;
+        }       
+    }
+    div:nth-of-type(6){
+        background-image: url(../image/PCDEUX.jpg);
+        background-size: cover;
+        grid-column: 2/3 ;
+        grid-row: 3/4;
+    }
+}
+.interlude{
+    text-align: center;
+    color: rgb(66 66 66);
+    H1{
+    font-family:  $font-stack;
+    color: rgb(66 66 66);
+
+    }
+}
+
+@media only screen and (max-device-width:800px){
+    .opening{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 270vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .art1{
+            background-image: url(../image/PCUN.jpg);
+            background-position: center;
+        }
+        .art2{
+            background-image: url(../image/PCCINQ.jpg);
+            background-position: center;
+        }
+        .art3{
+            background-image: url(../image/PCQUATRE.jpg);
+            background-position: center;
+        }
+        #article{
+            background-color: #333;
+            width: 73%;
+            height: 95%;
+            margin: 4%;
+            display: flex;
+            flex-direction: column-reverse;
+            
+            .indic{
+                background-color: $primary-color;
+                font-family:  $font-stack;
+                height: 30%;
+                text-align: center;
+                border-top: solid 2px grey;
+                display: flex;
+                align-items: center;
+                p{
+                    font-family:  $font-stack;
+                    padding: 10px;
+                }
+            }
+        }
+    
+    }
+
+}
+header{
+    position: sticky;
+    top: 0px;
+
+    .navigation{
+        .PC-nav{
+            color: rgb(33, 33, 33);
+            font-family:  $font-stack;
+            font-weight: 500;
+            font-size: 20px;
+            height: 7vh;
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+        }
+    }
+
+}
+.textinfo{
+font-size: 13px;
+}
+@media only screen and (max-device-width:800px){
+    .textinfo{
+        font-size: 20px;
+        }
+}
+
+
+
